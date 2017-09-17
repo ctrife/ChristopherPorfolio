@@ -1,0 +1,168 @@
+/* Global css to remove default margins and padding*/
+* { 
+	margin:0; 
+	padding:0; 
+	box-sizing:border-box; 
+}
+/* Custom classes*/
+.textCenter{
+	text-align:center;
+}
+.textMargin{
+	margin-bottom:10px;
+}
+.textCursive{
+	font-family: "Brush Script Std", "Brush Script MT", "cursive";
+	letter-spacing: 4px;
+	text-shadow: 2px 2px 6px #109BC9;
+}
+.headerStyle{
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+/* Style the Tab Navigation */
+div.tabNavigation {
+    overflow: hidden;
+    background-color: #f1f1f1;
+	box-shadow: 0px 0px 19px #353333;
+}
+
+/* Style the buttons inside the Tab Navigation */
+div.tabNavigation button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tabNavigation button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tabNavigation button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabContent {
+    display: none;
+    border-top: none;
+	-webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* adjustments for portfolio photo and location */
+.portfolioPhoto{
+	width:210px;
+	height:220px;
+	border-radius:15px;
+	text-align: center;
+	box-shadow: 0px 0px 19px #353333;
+	/*! margin-bottom: 0px; */
+}
+/* css to make the resume link look more like a button */
+.resumeButton{
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+/* Adds a gradient to the main home portion of the page */
+.homeBackground{
+	background: linear-gradient(#366FA7,#109BC9);
+	padding: 8px 0px;
+	display:inline-block;
+
+	width: 100%;
+}
+.columnOne{
+	float:left;
+	padding: 3% 1% 0 35%;
+}
+.columnTwo{
+	float:right;
+	padding: 0 35% 0 1%;
+}
+/* adjust about me text section */
+.aboutMeText{
+	margin: 0 20% 0 20%;
+}
+/* Adjust text content on the experience page */
+.jobColumn{
+	padding: 0% 34%;
+}
+/* Container for laungauge bars */
+.skillBoxOne{
+	width: 30%;
+	padding-left: 10%;
+	float:left;
+}
+/* Container for Framework bars */
+.skillBoxTwo{
+	width: 30%;
+	padding-right: 10%;
+	float:right;
+}
+/* wraps each skill bar in a div that give off the grey portion of the percent bar. */
+.container {
+    width: 100%; 
+    background-color: #ddd; 
+	border-radius: 5px;
+	border: 1px solid #626262;
+}
+/* creates the second portion of the percent bars, gives the amount full */
+.skills {
+    text-align: right; 
+    padding-right: 20px; 
+    line-height: 25px; 
+    color: white; 
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	background-color: #1c79c9
+}
+/* box one skills width */
+.html {width: 95%;} 
+.css {width: 90%;} 
+.js {width: 85%;} 
+.php {width: 20%;} 
+.python {width: 40%; } 
+.sql {width: 30%;} 
+
+/* box two skills width */
+.seleniumn {width: 90%;} 
+.bootstrap {width: 90%;} 
+.jest {width: 85%;} 
+.enzyme {width: 85%;} 
+.react {width: 70%; } 
+.node {width: 60%;} 
+.docker {width: 70%;}
+.django {width: 40%;}
+
+@media screen and (max-width: 1580px) {
+	.smallColumnOne{
+		text-align:center;
+		float:none;
+		padding: 0 0 15px 0;
+	}
+	.smallColumnTwo{
+		text-align:center;
+		float:none;
+		padding:0;
+	}
+}

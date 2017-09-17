@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Christopher Rife's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="portfolio.js"></script>
+</head>
+<body>
+	<!-- Navigation section -->
+	<div class="tabNavigation">
+		<button class="tablinks" onclick="openPage(event, 'Home')" id="defaultPage">Home</button>
+		<button class="tablinks" onclick="openPage(event, 'Experience')">Experience</button>
+		<button class="tablinks" onclick="openPage(event, 'Skills')">Skills</button>
+		<button class="tablinks" onclick="openPage(event, 'Contact')">Contact</button>
+	</div>
+	<!-- Main blue background section, with photo, name, and resume button -->	
+	<div class="textCenter homeBackground">	
+		<div class="columnOne smallColumnOne">
+			<h1 class="textCenter headerStyle">Christopher Rife</h1>
+			<h3 class="textCenter textMargin headerStyle">Jr. Software Developer</h3>
+			<a class="resumeButton headerStyle" href="ChristopherResume.pdf" download>Download Resume</a>
+		</div>
+		<div class="columnTwo smallColumnTwo">
+			<img class="portfolioPhoto" src="portfolio_photo.jpg">
+		</div>
+	</div> 
+	<!-- Home content section -->
+	<div id="Home" class="tabContent">
+		<h2 class="textCenter textMargin textCursive">About Me</h2>
+		<div class="aboutMeText">
+			<p class="textCenter">Experienced Junior Application Developer with a demonstrated history 
+			   of working in the information technology and services industry.Strong engineering professional with a 
+			   Bachelor's degree focused in Computer and Information Systems from DeVry University. 
+			   Skilled in JavaScript, HTML, CSS, and a plethora of other lanuages. Many of the projects I have worked on
+			   helped customers to either check on their service or help them order new products. 
+			</p>
+			<br>
+			<br>
+			<div style="float:left; width:40%">
+				<h3 class="textCenter textCursive">CART Project</h3>
+				<p>Created a GUI using HTML, CSS, JavaScript, jQuery, and Bootstrap for the front-end paired 
+				with a PHP back-end. This application allowed customers to view real time data to assert if their 
+				service was available and gave a means to track progress on work orders.
+				</p>
+			</div>
+			<div style="float:right; width:40%">
+				<h3 class="textCenter textCursive">GOSS Project</h3>
+				<p>Created a GUI using React.js, React-Bootstrap, CSS for the front-end paired with a Django/Python back-end. 
+				This application allowed customers to fill out forms for new orders for products as well as 
+				customize and edit pervious orders. I also helped create a Testing framework using Selenium, Jest, and Enzyme 
+				to discover errors and optimize usability for the GOSS application. 
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- Experience content section -->
+	<div id="Experience" class="tabContent">
+		<h2 class="textCenter textMargin textCursive">Experience</h2>
+		<div class="jobColumn">
+			<p class="textCenter"><i>May 2016 to August 2017</i></p>
+			<h3 class="textCenter">AT&amp;T/Apex Systems Inc. - Raleigh, NC</h3>
+			<p class="textCenter"><i>Jr. Developer</i></p>
+			<br>
+			<ul>
+				<li>Work with senior developer to manage large, complex design projects for 
+					corporate clients.
+				</li>
+				<li>Attend daily standups and agile planning meetings to ensure that all aspects of the project 
+					are understood and that all road blocks are known to the product owners.
+				</li>
+				<li>Develop project concepts using industry tools and maintain optimal workflow and deliverables.
+				</li>
+				<li>Complete detailed programming and development tasks for 
+					front end public and internal websites as well as back-end server code
+				</li>
+				<li>Collaborate with designers to create clean interfaces and simple, 
+					intuitive interactions and experiences.
+				</li>
+				<li>Carry out quality assurance tests using Selenium to discover errors and optimize usability.
+				</li>
+				<li>Develop, test and deploy code in a four-week sprint cycle to ensure 
+					that the business needs are met fully and on time.
+				</li>
+				<li>Work in a team environment with both remote and local members utilizing 
+					source code GIT Workflows.
+				</li>
+			</ul>
+		</div>	
+	</div>
+	<!-- Skills content section -->
+	<div id="Skills" class="tabContent">
+		<h2 class="textCenter textMargin textCursive">Skills</h2>
+		<br>
+		<div class="skillBoxOne">
+			<h4>Languages</h4>
+			<br>
+			<p>HTML</p>		
+			<div class="container">
+			  <div class="skills html">95%</div>
+			</div>
+			<p>CSS</p>
+			<div class="container">
+			  <div class="skills css">90%</div>
+			</div>
+			<p>JavaScript</p>
+			<div class="container">
+			  <div class="skills js">85%</div>
+			</div>
+			<p>PHP</p>
+			<div class="container">
+			  <div class="skills php">20%</div>
+			</div>
+			<p>Python</p>
+			<div class="container">
+			  <div class="skills python">40%</div>
+			</div>
+			<p>SQL</p>
+			<div class="container">
+			  <div class="skills sql">30%</div>
+			</div>
+		</div>
+		<div class="skillBoxTwo">
+			<h4>Frameworks</h4>
+			<br>
+			<p>Seleniumn</p>		
+			<div class="container">
+			  <div class="skills seleniumn">90%</div>
+			</div>
+			<p>Bootstrap</p>
+			<div class="container">
+			  <div class="skills bootstrap">90%</div>
+			</div>
+			<p>Jest</p>
+			<div class="container">
+			  <div class="skills jest">85%</div>
+			</div>
+			<p>Enzyme</p>
+			<div class="container">
+			  <div class="skills enzyme">85%</div>
+			</div>
+			<p>React.js</p>
+			<div class="container">
+			  <div class="skills react">70%</div>
+			</div>
+			<p>Node.js</p>
+			<div class="container">
+			  <div class="skills node">60%</div>
+			</div>
+			<p>Docker</p>
+			<div class="container">
+			  <div class="skills docker">70%</div>
+			</div>
+			<p>Django</p>
+			<div class="container">
+			  <div class="skills django">40%</div>
+			</div>
+		</div>
+	</div>
+	<!-- Contact content section -->
+	<div id="Contact" class="tabContent textCenter">
+		<h2 class="textCenter textMargin textCursive">Contact</h2>
+		<br>
+		<h3>Phone Number</h3>
+		<p>336-318-5030</p>
+		<br>
+		<h3>E-Mail</h3>
+		<p>ct_rife@yahoo.com<p>
+		<br>
+		<a href="https://www.linkedin.com/in/christopher-rife-1a0323aa/" target="_blank">
+			<img src="linkedIn.png" style="border-radius:5px;">
+		</a>
+	</div>
+</body>
+
+</html> 
